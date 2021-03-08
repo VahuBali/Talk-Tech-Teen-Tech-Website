@@ -26,7 +26,7 @@ SECRET_KEY = 'z$lmaihjfi3d)sw$jii$a-_j&d84cmxu_3tz!248=#eotntwb^'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['talktechteentech.herokuapp.com', '127.0.0.1']
 
 
 # Application definition
