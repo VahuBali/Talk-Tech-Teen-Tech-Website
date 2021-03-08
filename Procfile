@@ -1,1 +1,1 @@
-web: gunicorn python quadrot.wsgi --log-file -
+web: gunicorn quadrot.wsgi --log-file -
