@@ -1,0 +1,81 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talk Tech Teen Tech</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class = "logo"><img src="{% static 'images/icon-1.png' %}"></li>
+                <li class="active">Home</li>
+                <li><a href = "listen" class = "link" style = "text-decoration: none;">Listen</a></li>
+                <li><a href = "prem" class = "link" style = "text-decoration: none;">Premium Techy</a></li>
+                <li><a href = "prodospecs" class = "link" style = "text-decoration: none;">Product Specs</a></li>
+                <li><a href = "contact" class = "link" style = "text-decoration: none;">Contact</a></li>
+                <li><a href ="signup" class ="signup-btn"><span>Sign Up</span></a></li>
+            </ul>
+        </div>
+        <div class="banner">
+            <div class="app-text">
+                <h1>Talk Tech Teen Tech</h1>
+                <p>This podcast talks about tech but through the eyes of grade school teens <br> to get a different approach on the bleeding-edge of technology</p>
+            </div>
+            <div class="app-picture">
+                <img src="{% static 'images/micstuff.png' %}">
+            </div>
+            <div class="startnow">
+                <li><a href = "listen.html" class = "startnow-btn"><span>Start Listening Now</span></a></li>
+            </div>
+        </div>
+    </div>
+    <div class="aboutus">
+        <div class="about-section">
+            <div class="inner-container">
+                <h1>About Us</h1>
+                <p class="text">
+                    Talk Tech Teen Tech is a podcast created by teens, made for the masses. In this podcast we talk about the bleeding edge of technology but through a teens perspective and what we think tech should be about and how companies handle technology. We talk about products from all sorts of companies (Apple, Samsung, OnePlus, Xiomi, Dell, Microsoft etc.). Our goal was to introduce another prespective of technology into the web and also to influence others that you don't need to be 30 to create a tech podcast, and with minimal gear you can create an amazing podcast! 
+                </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="creators">
+        <div class="hero">
+            <h1>TEAM MEMBERS</h1>
+            <div class="row">
+                <div class="col">
+                    <div class="profile">
+                        <img src="{% static 'images/vasu.png' %}">
+                        <h2>Vasu Bansal</h2>
+                        <p>Techincally Creator</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="profile">
+                        <img src="{% static 'images/chinmay.jpg' %}">
+                        <h2>Chinmay Sule</h2>
+                        <p>Techincally Co-Host</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer">
+        <footer>
+            <div class="footers">
+                <h1>So what are you waiting for just click this button to start listening right away!</h1>
+                <li><a href = "listen" class = "startnow-footer"><span>Start Listening Now</span></a></li>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% load static %}
+{% static "images" as baseUrl %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen to Talk Tech Teen Tech</title>
+    <link rel="stylesheet" href="{% static 'prodospecs.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class = "logo"><img src="{% static 'images/icon-1.png' %}"></li>
+                <li><a href = "index" class = "link" style = "text-decoration: none;">Home</a></li>
+                <li><a href = "listen" class = "link" style = "text-decoration: none;">Listen</a></li>
+                <li><a href = "prem" class = "link" style = "text-decoration: none;">Premium Techy</a></li>
+                <li class = "active">Product Specs</li>
+                <li><a href = "contact" class = "link" style = "text-decoration: none;">Contact</a></li>
+                <li><a href ="signup" class ="signup-btn"><span>Sign Up</span></a></li>
+            </ul>
+        </div>
+        <div class="title">
+            <h1>Product Specs</h1>
+            <p>The list of important specs for each product that we talk about on Talk Tech Teen Tech</p>
+        </div>
+        {% for product in products %}
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src= {{product.img.url}} style="width:300px;height:300px;">
+            </div>
+            <div class="flip-card-back">
+              <h1>{{product.name}}</h1>
+              <p>{{product.screen}}</p>
+              <p>{{product.chipset}}</p>
+              <p>{{product.camera}}</p>
+              <p>{{product.special}}</p>
+              <p>Price: ${{product.price}} USD</p> 
+            </div>
+          </div>  
+        </div>
+        {% endfor %}
+
+</body>

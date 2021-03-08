@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listen to Talk Tech Teen Tech</title>
+    <link rel="stylesheet" href="{% static 'listen.css' %}">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li class = "logo"><img src="{% static 'images/icon-1.png' %}"></li>
+                <li><a href = "index" class = "link" style = "text-decoration: none;">Home</a></li>
+                <li class = "active">Listen</li>
+                <li><a href = "prem" class = "link" style = "text-decoration: none;">Premium Techy</a></li>
+                <li><a href = "prodospecs" class = "link" style = "text-decoration: none;">Product Specs</a></li>
+                <li><a href = "contact" class = "link" style = "text-decoration: none;">Contact</a></li>
+                <li><a href ="signup" class ="signup-btn"><span>Sign Up</span></a></li>
+            </ul>
+            <h1>Start Listening To Talk Tech Teen Tech<br> on all your favorite podcast platforms</h1>
+            <p>Spotify, Apple Podcasts, Google Podcasts, and many more!</p>
+
+            <a href = "https://open.spotify.com/show/3yFDdA71GgMHZ1lIBM4h88" class="spotify"><img src="{% static 'images/spotify.png' %}"></a>
+            <a href = "https://podcasts.apple.com/us/podcast/talk-tech-teen-tech/id1535573303" class="apple-podcasts"><img src="{% static 'images/applepodcasts.png' %}"></a>
+            <a href = "https://redcircle.com/talk-tech-teen-tech" class="redcircle"><img src="{% static 'images/redcircle.png' %}"></a>
+        </div>
+        
